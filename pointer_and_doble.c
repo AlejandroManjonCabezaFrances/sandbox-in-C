@@ -30,7 +30,10 @@ int main()
 
 	str = malloc(3);
 
-	change_valor(&str);	// necesitas subir en ** para guardarlo
-	printf("str = %s\n", str);	// despúes de la función
+	change_valor(&str);
+	printf("str = %s\n", str);
 	return (0);
 }
+
+// Utilización del doble puntero para que se guarde el valor
+// y no sea unicamente de forma local.
