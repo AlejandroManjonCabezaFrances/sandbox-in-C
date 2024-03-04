@@ -2,6 +2,22 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+void	change_valor(int a)
+{
+	a = 6;
+}
+
+int main()
+{
+	int a;
+
+	a = 2;
+	printf("a = %d\n", a);
+	change_valor(a);
+	printf("a = %d\n", a);
+	return (0);
+}
+
 // void	change_valor(int *a)
 // {
 // 	*a = 6;
@@ -12,28 +28,31 @@
 // 	int a;
 
 // 	a = 2;
+// 	printf("a = %d\n", a);
 // 	change_valor(&a);
 // 	printf("a = %d\n", a);
 // 	return (0);
 // }
 
-void	change_valor(char **str)
-{
-	*str = malloc(5);
+// void	change_valor(char **str)
+// {
+// 	*str = malloc(5);
 
-	*str = "hola";
-}
+// 	*str = "hola";
+// }
 
-int main()
-{
-	char *str;
+// int main()
+// {
+// 	char *str;
 
-	str = malloc(3);
+// 	str = malloc(3);
+// 	str = "hi";
 
-	change_valor(&str);
-	printf("str = %s\n", str);
-	return (0);
-}
+// 	printf("str = %s\n", str);
+// 	change_valor(&str);
+// 	printf("str = %s\n", str);
+// 	return (0);
+// }
 
 // Utilización del doble puntero para que se guarde el valor
 // y no sea unicamente de forma local.
